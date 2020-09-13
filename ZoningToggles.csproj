@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\sid44\Desktop\ZonningToggles\ZoningToggles.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FED646B1-7D86-4323-9AEB-433915F23731}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>ZoningToggles</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.6719.2836</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>ZoningToggles</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DeactivatableButtonWrapper.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="ToggleStates.cs" />
+    <Compile Include="Options.cs" />
+    <Compile Include="OptionsWrapper.cs" />
+    <Compile Include="OptionsLoader.cs" />
+    <Compile Include="UIUtils.cs" />
+    <Compile Include="ModInfo.cs" />
+    <Compile Include="LoadingExtension.cs" />
+    <Compile Include="ThreadingExtension.cs" />
+    <Compile Include="ZoningTogglesUI.cs" />
+    <Compile Include="BuildToggle\ToolMode.cs" />
+    <Compile Include="BuildToggle\ToolError.cs" />
+    <Compile Include="BuildToggle\ZoningTool11.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\togglezoning_icon.png" />
+    <EmbeddedResource Include="Assets\upgrade_zoning_icon.png" />
+    <EmbeddedResource Include="Properties\Resources.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
